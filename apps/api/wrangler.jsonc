@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "devpilot-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-29",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [{ "binding": "DB", "database_name": "devpilot-db", "database_id": "local-dev-database-id", "migrations_dir": "migrations" }],
+  "r2_buckets": [{ "binding": "FILES", "bucket_name": "devpilot-files" }],
+  "queues": { "producers": [{ "binding": "INDEXING_QUEUE", "queue": "devpilot-indexing" }], "consumers": [{ "queue": "devpilot-indexing", "max_batch_size": 10, "max_batch_timeout": 5 }] }
+}
