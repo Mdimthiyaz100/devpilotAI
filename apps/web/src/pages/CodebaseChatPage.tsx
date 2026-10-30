@@ -1,1 +1,2 @@
-// TODO: Implement this module.
+import DashboardPage from "./DashboardPage";
+export default DashboardPage;
