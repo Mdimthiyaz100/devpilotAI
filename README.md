@@ -15,3 +15,4 @@ A monorepo starter for an AI assisted repository workspace.
 Install pnpm, then run `pnpm install` and `pnpm dev`. The web app runs on port 5173; Wrangler serves the API locally.
 
 Most feature modules are placeholders ready for implementation. Add UI primitives with the shadcn CLI as the app's component patterns settle.
+"# devpilotAI" 
